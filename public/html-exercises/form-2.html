@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Form 2</title>
+    </head>
+    <Body>
+        <h1>Order Form</h1>
+        <form>
+        <fieldset>
+            <legend>Customer Details</legend>
+            <label>Customer name: <input type="text" name="Customer Name" required></label><br>
+            <label>Mobile Number: <input type="textr" name="Mobile Number" required></label><br>
+            <label>Email Address: <input type="email" name="Email Address" required></label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Pizza Option</legend>
+            <label>
+            Flavor
+            <select name="Flavor">
+            <option value="Hawaiian">Hawaiian</option>
+            <option value="Double cheese">Double cheese</option>
+            <option value="Margherita">Margherita</option>
+            <option value="Bacon Cheese burger">bacon Cheese Burger</option>
+            <option value="Pepperoni and cheese">pepperoni and cheese</option>
+            </select>
+            </label><br>
+            Size: <br>
+            <label><input type="radio" name="size" value="Small"> Small </label>
+            <label><input type="radio" name="size" value="Medium"> Medium </label>
+            <label><input type="radio" name="size" value="Large"> Large </label> <br>
+            Extra Toppings: <br>
+            <label><input type="checkbox" name="Extra Toppings" value="Bacon" > Bacon </label>
+            <label><input type="checkbox" name="Extra Toppings" value="Cheese" > Cheese </label>
+            <label><input type="checkbox" name="Extra Toppings" value="Onion" > Onion </label>
+            <label><input type="checkbox" name="Extra Toppings" value="Mushroom" > Mushroom</label> <br>
+        </fieldset>
+        <fieldset>
+            <Legend>Delivery Detials</Legend>
+            <label> Delivery date: <input type="date" name="Delivery Date"></label><br>
+            <label> Perferred Time: <input type="time" name="Preffered Time"></label><br>
+            <label> Delivery Address:<br> <textarea rows="10" cols="50"></textarea></label><br>
+        </fieldset>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit Order</button>
+        </form>
+    </Body>
+</html>
