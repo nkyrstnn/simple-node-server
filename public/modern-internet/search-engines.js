@@ -1,0 +1,3 @@
+document.getElementById('Title').innerHTML="SEARCH ENGINE"
+document.getElementById('p1').innerHTML="Search engine is a program that searches for and identifies items in a database that correspond to keywords or characters specified by the user, used especially for finding particular sites on the World Wide Web (according to Google)"
+document.getElementById('p2').innerHTML="Search Engines use automated software to collect information on websites as they go. When you search in a search engine, the engine returns with a list of sites that is ranked according to their relevance. The relevance depends on the way the search engine works. Some use excite, artificial intelligence or by popularity."

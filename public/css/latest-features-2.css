@@ -1,0 +1,117 @@
+div{font-family:comfortaa; width: 900px;}
+.whole{
+    background: linear-gradient(to top,#84befe,white);
+    width: 900px;
+    margin: auto;
+    padding:40px;
+    border: 40px #cbe5ff;
+}
+.preview{
+    background-color: #84befe ;
+    width: 700px;
+    height:360px;
+    text-align: center;
+    position: relative;
+    left:200px;
+    bottom: 240px;
+    font-size:90px;
+    text-shadow: 5px 5px 10px gray;
+    color:white;
+
+}
+.box{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 5px 5px 10px gray;
+}
+.rect{
+    color: #cbe5ff;
+    bordeR: dashed;
+    width: 30px;
+    height: 150px;
+    position: fixed;
+    top: 200px;
+    right: -5px;
+    border-radius: 10px;
+}
+.nav a{
+   float:left;
+	width:159px;
+	text-decoration:none;
+	color:white;
+	background-color: #84befe;
+	padding: 10px;
+	border-right:1px solid white;
+	text-align:center;
+	position: relative;
+	bottom: 220px;
+	border-radius: 0px 15px 0px 0px;
+}
+a:hover{
+    color: #cbe5ff;
+    background-color: white;
+}
+.mid{
+    background-color: white;
+    width: 900px;
+    height: 900px;
+    position: relative;
+    bottom: 180px;
+}
+.last{
+    background-color: white;
+    width:885px;
+    height: 225px;
+    padding: 10px;
+    position:relative;
+    bottom: 155px;
+}
+.left{
+    background-color: white;
+    width: 420px;
+    height: 200px;
+    border-style:dashed;
+    border-color:#84befe;
+    padding: 5px;
+
+}
+.left-head{
+    background:linear-gradient(to bottom, lightblue, #84befe);
+    width:415px;
+    height:50px;
+    float: left;
+    border-radius: 0px 0px 20px 20px;
+    font-size: 30px;
+    color:white;
+}
+.right{
+    background-color: white;
+    width: 435px;
+    height: 200px;
+    border-style:dashed;
+    border-color:  #84befe;
+    float: right;
+    padding: 5px;
+    position: relative;
+    bottom: 215px;
+}
+.right-head{
+    background:radial-gradient(#84befe, lightblue);
+    width:425px;
+    height:50px;
+    float:right;
+    border-radius: 0px 0px 20px 20px;
+    font-size: 30px;
+    color: white;
+}
+.footer{
+    color: #84befe;
+    position: relative;
+    bottom: 140px;
+    left: 700px;
+}

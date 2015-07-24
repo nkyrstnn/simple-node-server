@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CMSC 2 Introduction to Internet</title>	
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/github-gist.css">
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="jumbotron">
+				<h1 id="title">
+					CMSC 2 <small>Introduction to Internet</small>
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<h2>Responsive Layout 2</h2>
+			Your file for this exercise should be saved in the public folder and should be accessed using this link: <strong>"/css-exercises/responsive-layout-2.html"</strong>. The content of the HTML file is given below. With the given HTML content, design the web page using an <strong>internal style sheet</strong> in such a way it will look <strong>exactly</strong> like the screenshot below.
+			<br/>
+			<h6 style="color:red;font-weight:bold;">Note: You cannot modify the content, only the style sheet AND the classes!</h6>
+			
+			<hr/>
+			Aside from the design visible in the screenshot, here are some additional details for the design of the web page:
+			<ul>
+				<li>All of the elements should have the <em>box-sizing</em> property set to <em>border-box</em>.</li>
+				<li>Make use of meta tag to specify the author and description of your exercise.</li>
+				<li>Make use of meta tag to set the width of the page to follow the screen-width of the device and set the initial zoom level when the page is first loaded by the browser.</li>
+				<li>The CSS rule for the column sizes are already included in the HTML page, you just need to set the right classes for each div tag (column) to fix the display of the page when viewed on desktop, tablet and mobile phone (See the 3 screenshots).</li>
+				
+			</ul>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Content</h3>
+				</div>
+			</div>
+			<div class="highlight"><pre class="html"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;style&gt;
+			/* Insert Additional Styles Here */
+			
+			body {
+				font-family: &quot;Lucida Sans&quot;, sans-serif;
+			}
+			[class*=&quot;col-&quot;] {
+				float: left;
+				padding: 15px;
+			}
+			.header {
+				background-color: #8d3441;
+				color: #ffffff;
+				text-align: center;
+			}
+			.vertical ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			.vertical li {
+				padding: 8px;
+				margin-bottom: 7px;
+				background-color :#f06060;
+				color: #ffffff;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			}
+			.vertical li:hover {
+				background-color: #f2dde1;
+				color: #000000;
+			}
+			.horizontal ul {
+				background-color :#f06060;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+			.horizontal li {
+				padding: 8px;
+				background-color :#f06060;
+				color: #ffffff;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				float: left;
+				width: 25%;
+				text-align: center;
+			}
+			.horizontal li:hover {
+				background-color: #f2dde1;
+				color: #000000;
+			}
+			.footer {
+				background-color: #8d3441;
+				color: #ffffff;
+				text-align: center;
+				font-size: 12px;
+				padding: 15px;
+			}
+			
+			/* For mobile phones: */
+			[class*=&quot;col-&quot;] {
+				width: 100%;
+			}
+			.horizontal li {font-size:0.7em;}
+			@media (min-width: 600px) {
+				/* For tablets: */
+				.horizontal li {font-size:1em;}
+				.col-m-12 {width: 8.33%;}
+				.col-m-2 {width: 16.66%;}
+				.col-m-3 {width: 25%;}
+				.col-m-4 {width: 33.33%;}
+				.col-m-5 {width: 41.66%;}
+				.col-m-6 {width: 50%;}
+				.col-m-7 {width: 58.33%;}
+				.col-m-8 {width: 66.66%;}
+				.col-m-9 {width: 75%;}
+				.col-m-10 {width: 83.33%;}
+				.col-m-11 {width: 91.66%;}
+				.col-m-12 {width: 100%;}
+			}
+			@media (min-width: 768px) {
+				/* For desktop: */
+				.horizontal li {font-size:1em;}
+				.col-1 {width: 8.33%;}
+				.col-2 {width: 16.66%;}
+				.col-3 {width: 25%;}
+				.col-4 {width: 33.33%;}
+				.col-5 {width: 41.66%;}
+				.col-6 {width: 50%;}
+				.col-7 {width: 58.33%;}
+				.col-8 {width: 66.66%;}
+				.col-9 {width: 75%;}
+				.col-10 {width: 83.33%;}
+				.col-11 {width: 91.66%;}
+				.col-12 {width: 100%;}
+			}
+		&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;column horizontal&quot;&gt;
+				&lt;ul&gt;
+					&lt;li&gt;Home&lt;/li&gt;
+					&lt;li&gt;Products&lt;/li&gt;
+					&lt;li&gt;Company&lt;/li&gt;
+					&lt;li&gt;Contact&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		
+		&lt;div class=&quot;row header&quot;&gt;
+			&lt;div class=&quot;column&quot;&gt;
+				&lt;h1&gt;Company Name&lt;/h1&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;column vertical&quot;&gt;
+				&lt;ul&gt;
+					&lt;li&gt;Button 1&lt;/li&gt;
+					&lt;li&gt;Button 2&lt;/li&gt;
+					&lt;li&gt;Button 3&lt;/li&gt;
+					&lt;li&gt;Button 4&lt;/li&gt;
+					&lt;li&gt;Button 5&lt;/li&gt;
+					&lt;li&gt;Button 6&lt;/li&gt;
+					&lt;li&gt;Button 7&lt;/li&gt;
+					&lt;li&gt;Button 8&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;column&quot;&gt;
+				&lt;h1&gt;Welcome&lt;/h1&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;column&quot;&gt;
+				&lt;h1&gt;News&lt;/h1&gt;
+				&lt;p&gt;&lt;strong&gt;06.27.15 - News Header&lt;/strong&gt; &lt;br/&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. &lt;/p&gt;
+				&lt;p&gt;&lt;strong&gt;06.28.15 - News Header&lt;/strong&gt; &lt;br/&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. &lt;/p&gt;
+				&lt;p&gt;&lt;strong&gt;06.29.15 - News Header&lt;/strong&gt; &lt;br/&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. &lt;/p&gt;
+				&lt;p&gt;&lt;strong&gt;06.30.15 - News Header&lt;/strong&gt; &lt;br/&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. &lt;/p&gt;
+				&lt;p&gt;&lt;strong&gt;07.01.15 - News Header&lt;/strong&gt; &lt;br/&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. &lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+	&lt;div class=&quot;row footer&quot;&gt;
+		&lt;div class=&quot;column&quot;&gt;
+			&lt;h3&gt;&amp;#169; 2015. All rights reserved.&lt;/h3&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+			</div>
+			
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Screenshot</h3>
+				</div>
+				<div class="panel-body">
+					<h4>Desktop Layout</h4>
+					<img src="/images/responsive-layout-2-desktop.png" alt="Responsive Layout Exercise: Desktop Screenshot" style="width:85%;margin:0 auto;" /> <br/>
+					
+					<h4>Tablet Layout</h4>
+					<img src="/images/responsive-layout-2-tablet.png" alt="Responsive Layout Exercise: Desktop Screenshot" style="width:85%;margin:0 auto;" /> <br/>
+					
+					<h4>Mobile Layout</h4>
+					<img src="/images/responsive-layout-2-mobile.png" alt="Responsive Layout Exercise: Desktop Screenshot" style="width:85%;margin:0 auto;" /> <br/>
+				</div>
+			</div>
+			
+			
+		</div><!--col-md-12-->
+	</div><!--end of row-->
+</div>
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script src="../js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript" src="../js/ZeroClipboard.min.js"></script>
+<script>
+	 //Config ZeroClipboard
+	ZeroClipboard.config({
+		hoverClass: 'btn-clipboard-hover'
+	})
+	// Insert copy to clipboard button before .highlight
+	$('.highlight').each(function () {
+		var btnHtml = '<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>';
+		$(this).before(btnHtml)
+	});
+	var zeroClipboard = new ZeroClipboard($('.btn-clipboard'));
+	var htmlBridge = $('#global-zeroclipboard-html-bridge');
+	// Handlers for ZeroClipboard
+	zeroClipboard.on('ready', function (event) {
+		htmlBridge
+			.data('placement', 'top')
+			.attr('title', 'Copy to clipboard')
+			.tooltip();
+		// Copy to clipboard
+		zeroClipboard.on('copy', function (event) {
+			var highlight = $(event.target).parent().nextAll('.highlight').first();
+			event.clipboardData.setData("text/plain", highlight.text())
+		});
+		// Notify copy success and reset tooltip title
+		zeroClipboard.on('aftercopy', function () {
+			htmlBridge
+				.attr('title', 'Copied!')
+				.tooltip('fixTitle')
+				.tooltip('show')
+				.attr('title', 'Copy to clipboard')
+				.tooltip('fixTitle')
+		});
+	});
+	// Notify copy failure
+	zeroClipboard.on('error', function () {
+		ZeroClipboard.destroy();
+		htmlBridge
+			.attr('title', 'Flash required')
+			.tooltip('fixTitle')
+			.tooltip('show');
+	});
+</script>
+
+</body>
+</html>

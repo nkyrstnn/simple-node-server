@@ -1,0 +1,10 @@
+p{
+	background-color: lightblue;
+	width: 200px;
+	padding: 25px;
+	border: solid gray;
+	border-style:; double;
+	border-width: 20px ;
+	margin: 25px;
+	padding: 10px 20px 30px 40px;
+}

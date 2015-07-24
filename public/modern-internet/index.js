@@ -1,0 +1,4 @@
+document.getElementById('Title').innerHTML="Welcome"
+document.getElementById('p1').innerHTML="Modern Internet"
+document.getElementById('p2').innerHTML="The main reason for the advancement of our techonology today is becuase of the internet. The internet has enabled us to communicate, experiment, and innovate with a lot of brilliant people around the globe. Furthermore, the internet has made our lives easier."
+document.getElementById('p3').innerHTML="Today, instead of relying on maps to get us to our destination, we rely on GPS. News is at our fingertips. information runs rampant around us and the internet is the reason for it all"

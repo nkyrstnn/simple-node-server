@@ -1,0 +1,3 @@
+document.getElementById('Title').innerHTML="INTERNET VIDEO STREAMING"
+document.getElementById('p1').innerHTML="Video streaming has come a long way since 1990's. Slow internet would result to you staring at the loading button or even not see the sight for hours and on top of that, if it does load, the image would be choppy and pixellated. "
+document.getElementById('p2').innerHTML="Cable signals, a satellite signal or radio waves send out the signal to your electronic device and your device decodes it and displays the signal. This is how we can watch channels from all around the globe.In streaming video or audio, the server streams the data of travelling information. The server, decoder and information streams works together to let people watch the live broadcasts."
